@@ -1,6 +1,6 @@
 FROM microbean/base:8
 LABEL maintainer="Laird Nelson <ljnelson@microbean.org>" org.microbean.docker.repository.name="microbean/helm"
-ARG helmVersion=2.4.1
+ARG helmVersion=2.4.2
 ENV HELM_VERSION=${helmVersion}
 RUN yum install --assumeyes gzip tar && \
 yum --assumeyes clean all && \
